@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+  --primary-color: rgb(73, 72, 72);
+}
+* {
+  font-family: 'VT323';
+  background-color: rgb(230, 230, 230);
+}
+.container {
+  display: grid;
+  grid-template-rows: 30px 600px;
+  justify-items: center;
+  align-items: center;
+}
+
+.playerHuman,
+.playerCPU {
+  text-align: center;
+  font-size: 25px;
+  color: var(--primary-color);
+}
+
+.title {
+  font-size: 48px;
+  margin-top: 50px;
+  color: var(--primary-color);
+}
+.board {
+  width: 400px;
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  grid-template-rows: repeat(10, 40px);
+  margin-left: 50px;
+}
+
+.playerHuman div,
+.playerCPU div {
+  border: 1px solid var(--primary-color);
+}
+
+.boom {
+  background-color: rgb(126, 1, 1);
+}
+
+.missed {
+  background-color: rgb(114, 164, 187);
+}
+
+.ship {
+  background-color: gray;
+}

@@ -8,7 +8,7 @@ import './style.css'
 const container = document.querySelector('.container')
 
 const player1 = playerHuman()
-player1.create('Simon')
+player1.create(prompt(`What's your name?`))
 
 const player2 = playerCPU()
 player2.create()
